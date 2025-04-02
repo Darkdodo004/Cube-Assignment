@@ -35,8 +35,8 @@ document.addEventListener('DOMContentLoaded', function() {
 function changeImage(imageSrc) {
     let mainImage = document.getElementById("mainImage");
     mainImage.src = imageSrc;
-    mainImage.style.width = "200px"; // Ensure fixed width
-    mainImage.style.height = "200px"; // Ensure fixed height
+    mainImage.style.width = "200px"; 
+    mainImage.style.height = "200px"; 
 }
 function updateCartLink() {
     let flavor = document.querySelector('input[name="flavor"]:checked').value;
@@ -60,14 +60,14 @@ document.addEventListener('DOMContentLoaded', function() {
     // 1. Animation Function
     function animateCounter(element, target) {
         let current = 0;
-        const duration = 2000; // 2 seconds
-        const increment = target / (duration / 16); // ~60fps
+        const duration = 2000; 
+        const increment = target / (duration / 16); 
         
         const timer = setInterval(() => {
             current += increment;
             if (current >= target) {
                 clearInterval(timer);
-                current = target; // Ensure exact number
+                current = target; 
             }
             element.textContent = Math.floor(current) + '%';
         }, 16);
@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function startCounters() {
         const counters = document.querySelectorAll('.number');
         counters.forEach(counter => {
-            counter.textContent = '0%'; // Reset to 0%
+            counter.textContent = '0%'; 
             const target = parseInt(counter.getAttribute('data-target'));
             animateCounter(counter, target);
         });
@@ -87,10 +87,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const observer = new IntersectionObserver((entries) => {
         if (entries[0].isIntersecting) {
             startCounters();
-            observer.disconnect(); // Stop observing after triggering
+            observer.disconnect(); 
         }
-    }, { threshold: 0.5 }); // Trigger when 50% visible
-
+    }, { threshold: 0.5 }); 
     observer.observe(statsSection);
 
     // 4. Fallback for older browsers
@@ -98,10 +97,6 @@ document.addEventListener('DOMContentLoaded', function() {
         startCounters();
     }
 });
-
-// script.js
-
-// script.js
 
 document.addEventListener('DOMContentLoaded', function() {
     // Slider elements
@@ -122,7 +117,6 @@ document.addEventListener('DOMContentLoaded', function() {
   
     // Initialize slider
     function initSlider() {
-      // Create dots if they don't exist in HTML
       if (!paginationDots.children.length) {
         for (let i = 0; i < slideCount; i++) {
           const dot = document.createElement('span');
@@ -208,7 +202,6 @@ document.addEventListener('DOMContentLoaded', function() {
       slider.style.transform = `translateX(${-currentIndex * slideWidth}px`;
     });
   
-    // Initialize
     initSlider();
   });
 
