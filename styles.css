@@ -1,0 +1,1295 @@
+@font-face {
+    font-family: 'newRailBold';
+    src: url('fonts/NewRailAlphabet-Bold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'newRailLight';
+    src: url('fonts/NewRailAlphabet-Light.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'newRailWhite';
+    src: url('fonts/NewRailAlphabet-White.otf') format('opentype');
+}
+/* Add this at the top of your CSS */
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'newRailLight', sans-serif;
+}
+nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f8f8;
+}
+
+.logo img {
+    width: 100px; /* Adjust logo size */
+}
+
+/* Main Content */
+.main-content {
+    text-align: center; /* Center align content */
+    padding: 20px;
+}
+
+.main-content h1 {
+    font-size: 24px; /* Adjust heading size */
+    font-weight: bold;
+}
+
+.main-content p {
+    font-size: 16px; /* Adjust paragraph size */
+    margin-bottom: 20px; /* Add spacing */
+}
+
+.stats {
+    display: flex;
+    flex-direction: column; /* Stack stats vertically */
+    align-items: center;
+}
+
+.stats div {
+    margin-bottom: 15px; /* Add spacing between stats */
+}
+
+.stats div span {
+    font-size: 24px; /* Highlight stat numbers */
+    font-weight: bold;
+    color: #d4a017; /* Gold color for emphasis */
+}
+
+.shopnow-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #d4a017; /* Gold button color */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+/* Header */
+header {
+    background-color: #322D2D;
+    height: 30px;
+    width: 100%;
+    color: white;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#search-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 100px;
+  }
+  
+  #search-box {
+    display: none; /* Hidden initially */
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  #search-btn, #close-btn {
+    margin-left: 5px;
+    padding: 5px 10px;
+    border: none;
+    background-color: #f0f0f0;
+    cursor: pointer;
+  }
+  
+  #close-btn {
+    font-size: 18px;
+  }
+  
+/* Container */
+.container {
+    width: 100%;
+    background-color: #F3F3F3BF;
+}
+
+/* Navigation Bar */
+.nav {
+    width: 100%;
+    height: 60px;
+    background-color: #F3F3F3BF;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'newRailLight';
+}
+
+/* Navigation Container */
+.nav-container {
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center aligns the content */
+    padding: 10px 20px;
+    gap: 20px;
+    
+    
+}
+
+/* Logo */
+.logo {
+    position: relative;
+   height: 29px;
+   width: 108px;
+   right: 155px;
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0; /* Remove extra padding */
+}
+/* Nav Items */
+.nav-links li {
+    padding: 10px;
+    position: relative;
+    right: 13px;
+    
+  
+}
+
+/* Nav Links */
+.nav-links li a {
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    font-weight: 2px;
+    transition: 0.3s;
+    font-family: 'newRailLight';
+    
+}
+
+/* Hover Effect */
+.nav-links li a:hover {
+    color: #f4a261;
+}
+.search-btn {
+   
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.search-btn i {
+    position: relative;
+    left: 99px;
+    font-size: 20px;
+    color: black;
+    transition: 0.3s;
+}
+
+.search-btn:hover i {
+    color: #f4a261;
+}
+/* Try Alcami Button */
+.try-btn {
+    background: linear-gradient(to right, #CAA648, #D5B147,#E4C267,#E2C065,#DBB95E,#D0AE52,#C09F41,#BB9A3C); /* Gold Gradient */
+    color: black;
+    border: none;
+    padding: 10px 18px;
+    font-size: 14px;
+    border-radius: 20px; /* Slightly rounded */
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'newRailLight';
+    position: relative;
+    left: 99px;
+    gap: 5px;
+}
+.arrow-icon {
+    font-size: 16px;
+    transition: transform 0.3s ease-in-out;
+    padding-left: 25px;
+}
+/* Hover Effect */
+.try-btn:hover {
+    background: linear-gradient(45deg, #FFC107, #B8860B); /* Darker gold */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+.home {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: center; 
+    width: 100%;
+    margin: 30px 0;
+    gap: 10px; 
+   
+}
+
+.home-container1 {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: left;
+    height: 365px;
+    width: 472px;
+    position: relative;
+    left: 200px;
+}
+.con span{
+    margin: 1.5 px;
+    font-size: 12px;
+    font-family: newRailLight;
+    font-weight: 2px;
+}
+.aa{
+    background-color:#FFFFFFB2; /* Gold background color */
+    border-radius: 20px;
+    padding: 5px 10px; /* Padding for better spacing */
+    color: #000; /* Text color (optional) */
+    display: inline-flex;
+    align-items: center;
+   
+}
+.home-container1a span{
+    font-size: 35px;       /* Increase font size */
+   
+    margin: 20px;          /* Add a margin around the container */
+    /* font-weight: bold;   */
+}
+.home-container2 {
+    
+    display: flex;
+   
+    
+    position: relative;
+    bottom: 269px;
+    height: 365px;
+    width: 500px;
+    right: -582px;
+}
+
+.home-container2 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.home-container1b {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.te {
+    /* font-family: "Poppins", sans-serif; */
+    font-size: 14px;
+    color: #333;
+    text-transform: lowercase;
+    text-align: left;
+    margin: 15px;
+}
+
+.te .highlight {
+    font-size: 48px;
+    font-weight: bold;
+    color: #d4af37; /* Gold Color */
+}
+
+.te .mg {
+    font-size: 32px;
+    font-weight: 100;
+    color: #d4af37;
+    
+}
+.shopnow{
+margin: 10px;
+position: relative;
+top: 119px;
+right: 397px;
+
+}
+.shop{
+    
+    background: linear-gradient(to right, #CAA648, #D5B147,#E4C267,#E2C065,#DBB95E,#D0AE52,#C09F41,#BB9A3C); /* Gold Gradient */
+    color: black;
+    border: none;
+    padding: 10px 18px;
+    font-size: 14px;
+    border-radius: 20px; /* Slightly rounded */
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'newRailLight';
+    position: relative;
+    gap: 5px;
+    width: 150px;
+}
+.shop:hover {
+    background: linear-gradient(45deg, #FFC107, #B8860B); /* Darker gold */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+.inc{
+    height: 100px;
+    width: 100%;
+    position: relative;
+    top: 322px;
+    left: -113px;
+    background-color: #F3F3F3BF ;
+}
+.incre{
+    height: 60px;
+    width: 750px;
+    border: solid 1px #D4AF37;
+    padding: 12px 0 0 144px;
+    border-radius: 16px;
+}   
+.incre span{
+    font-size: 24px;
+    align-items: center;
+   font-family: 'newRailLight';
+
+}
+/* Main Container */
+.home2 {
+    display: flex;
+    justify-content: space-between; /* Pushes both sections to opposite sides */
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    position: relative;
+    top: 80px;
+    font-family: 'newRailLight';
+    height: 620px;
+}
+
+/* Left Section - Images */
+.left-section {
+    width: 45%;
+    margin-left: 50px; /* Adds space from the left edge */
+    position: relative;
+    top: 120px;
+    left: 244px;
+}
+
+/* Right Section - Text Content */
+.right-section {
+    width: 45%;
+    margin-right: 50px; /* Adds space from the right edge */
+}
+.right-section span{
+    color: #9E6718;
+    font-size: 14px;
+    padding: 5px;
+}
+/* Main Image */
+.main-image {
+    width: 200px;
+    height: 200px;
+    object-fit: fill;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Thumbnails */
+.thumbnail-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    max-width: 400px;
+    margin-top: 10px;
+}
+
+.thumbnail {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: transform 0.3s;
+}
+
+.thumbnail:hover {
+    transform: scale(1.1);
+}
+
+/* Right Section Text Styling */
+
+
+.right-section p {
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    font-weight: 100;
+}
+.right-section h5 {
+    font-weight: 100;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+.right-section button {
+    background: linear-gradient(to right, #CAA648, #D5B147,#E4C267,#E2C065,#DBB95E,#D0AE52,#C09F41,#BB9A3C); /* Gold Gradient */
+    color: black;
+    border: none;
+    padding: 10px 18px;
+    font-size: 14px;
+    border-radius: 20px; /* Slightly rounded */
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'newRailLight';
+    position: relative;
+    gap: 5px;
+    width: 200px;
+}
+
+.right-section button:hover {
+    background: linear-gradient(45deg, #FFC107, #B8860B); /* Darker gold */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+#thumbnail2{
+    position: relative;
+    bottom: 295px;
+    left: -95px;
+    font-family: 'newRailLight';
+    font-size: 12px;
+    align-items: center;
+}
+#thumbnail3{
+    position: relative;
+    bottom: 338px;
+    left: -3px;
+    font-family: 'newRailLight';
+    font-size: 12px;
+    align-items: center;
+}
+#thumbnail4{
+    position: relative;
+    bottom: 288px;
+    left: 60px;
+
+    font-family: 'newRailLight';
+    font-size: 12px;
+    align-items: center;
+}
+
+#thumbnail5{
+    position: relative;
+    bottom: 7px;
+    left: 1px;
+    font-family: 'newRailLight';
+    font-size: 12px;
+    align-items: center;
+}
+#thumbnail6{
+    position: relative;
+    bottom: 7px;
+    left: -393px;
+    font-family: 'newRailLight';
+    font-size: 12px;
+    align-items: center;
+}
+#thumbnail7{
+    position: relative;
+    bottom: 338px;
+    left: -3px;
+    font-family: 'newRailLight';
+    font-size: 12px;
+    align-items: center;
+}
+#thumbnail8{
+    position: relative;
+    bottom: 105px;
+    left: -17px;
+
+    font-family: 'newRailLight';
+    font-size: 12px;
+    align-items: center;
+}
+#thumbnail9{
+    position: relative;
+    bottom: 265px;
+    left: -260px;
+
+    font-family: 'newRailLight';
+    font-size: 12px;
+    align-items: center;
+}
+#thumbnail10{
+    position: relative;
+    bottom: 266px;
+    left: -4    5px;
+    font-family: 'newRailLight';
+    font-size: 12px;
+    align-items: center;
+}
+.fig{
+    font-family: 'newRailLight';
+    font-size: 12px;
+    opacity: 0.5;
+    align-items: center;
+}
+.guaruntee{
+    background-color:#F3F3F3BF ;
+    position: relative;
+    margin:20px 0 0 117px;
+}
+.companies
+{
+    background-color:#F3F3F3BF ;
+    position: relative;
+    margin:20px 0 0 148px;
+}
+.home3 {
+    background-color:#F3F3F3BF ;
+    font-family: 'newRailLight';
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+}
+.title {
+    font-size: 24px;
+    font-weight: bold;
+}
+.rating {
+    color: gold;
+}
+.description {
+    font-size: 14px;
+    color: #555;
+}
+.options-container, .subscription-container {
+    background: #f8f8f8;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.options label, .subscription-container label {
+    display: block;
+    cursor: pointer;
+    padding: 5px;
+}
+.best-seller {
+    font-size: 12px;
+    background: gold;
+    padding: 2px 5px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-left: 10px;
+}
+.subscription-title {
+    background: linear-gradient(to right, #CAA648, #D5B147,#E4C267,#E2C065,#DBB95E,#D0AE52,#C09F41,#BB9A3C); /* Gold Gradient */
+    color: black;
+    border: none;
+    padding: 10px 18px;
+    font-size: 14px;
+    /* border-radius: 20px; Slightly rounded */
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'newRailLight';
+    position: relative;
+    gap: 5px;
+    width: 100%;
+}
+.price {
+    font-size: 16px;
+    font-weight: bold;
+}
+.old-price {
+    text-decoration: line-through;
+    color: grey;
+    font-size: 14px;
+}
+.benefits {
+    font-size: 14px;
+    margin-top: 10px;
+}
+.benefits li {
+    list-style: none;
+    margin-bottom: 5px;
+}
+.benefits li::before {
+    content: '✔ ';
+    color: green;
+    font-weight: bold;
+}
+.add-to-cart {
+    display: block;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: green;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.product-image {
+    width: 200px;
+    height: 300px;
+}
+.veg{
+    background-color:#F3F3F3BF ;
+    position: relative;
+    margin:20px 0 0 92px;
+}
+.home4 {
+    width: 900px;
+    margin: 0 auto;
+    font-family: 'newRailLight';
+}
+.product-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    right: 40px;
+}
+.product-image img {
+    width: 413px;
+    top: 18px;
+    position: relative;
+    right: 50px;
+}
+.benefits-home4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 20px;
+    position: relative;
+    left: 163px;
+}
+.benefit-box {
+    background: #f8f8f8;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+.benefit-box h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.benefit-box p {
+    font-size: 14px;
+    color: #555;
+}
+.button {
+    margin-top: 20px;
+    position: relative;
+    left: 400px;
+}
+.button a {
+    background: linear-gradient(to right, #CAA648, #D5B147,#E4C267,#E2C065,#DBB95E,#D0AE52,#C09F41,#BB9A3C); /* Gold Gradient */
+    color: black;
+    border: none;
+    padding: 10px 18px;
+    font-size: 14px;
+    border-radius: 20px; /* Slightly rounded */
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'newRailLight';
+    position: relative;
+    gap: 5px;
+    width: 200px;
+    text-decoration: none;
+}
+
+.button a:hover {
+    background: linear-gradient(45deg, #FFC107, #B8860B); /* Darker gold */
+    transform: scale(1.05); /* Slight zoom effect */
+
+}
+.home5{
+    
+    width: 100%;
+}
+.home5 img{
+    margin-top: 10px;
+    width: 1000px;
+}
+.home6 {
+    max-width: 1000px;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    left: 30px;
+    font-family: 'newRailLight';
+}
+.text-section {
+    flex: 1;
+}
+.video-section {
+    flex: 1;
+}
+.video-section img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+.step {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+.step-number {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ccc;
+    margin-right: 10px;
+}
+.step-text h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #d4a037;
+}
+.step-text p {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+}
+.cta-button {
+    margin-top: 20px;
+}
+.cta-button a {
+    background: linear-gradient(to right, #CAA648, #D5B147,#E4C267,#E2C065,#DBB95E,#D0AE52,#C09F41,#BB9A3C); /* Gold Gradient */
+    color: black;
+    border: none;
+    padding: 10px 18px;
+    font-size: 14px;
+    border-radius: 20px; /* Slightly rounded */
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'newRailLight';
+    position: relative;
+    gap: 5px;
+    width: 200px;
+    text-decoration: none;
+}
+.cta-button a:hover{
+    background: linear-gradient(45deg, #FFC107, #B8860B); /* Darker gold */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+.home7 {
+    background: url('images/bg.jpg') no-repeat center center/cover;
+    width: 1250px;
+    height: 100px;
+    padding: 50px 0;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    font-family: 'newRailLight';
+}
+.stat {
+    font-size: 13px;
+    text-align: left;
+    margin-left: 10px;
+}
+.number {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+.home8 {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 25px;
+    font-family: 'newRailLight';
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.comparison-table th,
+.comparison-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.comparison-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.comparison-table td {
+    text-align: center;
+}
+
+.comparison-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+.home9 {
+    width: 1200px;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.image-container {
+    width: 100%;
+}
+
+.founder-image {
+    width: 100%;
+    height: auto;
+}
+
+.text-container {
+    padding: 20px;
+}
+
+.text-container h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.text-container p {
+    font-size: 16px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.about-button {
+    background: linear-gradient(to right, #CAA648, #D5B147,#E4C267,#E2C065,#DBB95E,#D0AE52,#C09F41,#BB9A3C); /* Gold Gradient */
+    color: black;
+    border: none;
+    padding: 10px 18px;
+    font-size: 14px;
+    border-radius: 20px; /* Slightly rounded */
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'newRailLight';
+    position: relative;
+    gap: 5px;
+    width: 200px;
+    text-decoration: none;
+    top: 10px;
+}
+.about-button:hover{
+    background: linear-gradient(45deg, #FFC107, #B8860B); /* Darker gold */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+.home10 {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color:#F3F3F3BF ;
+    font-family: 'newRailLight';
+  }
+  
+  .testimonial-section {
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  .testimonial-container {
+    position: relative;
+    margin: 30px auto;
+    max-width: 1000px;
+    overflow: hidden;
+  }
+  
+  .testimonial-slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    will-change: transform; /* Optimize for performance */
+  }
+  
+  .testimonial-slide {
+    flex: 0 0 100%;
+    min-width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    font-style: italic;
+    color: #555;
+    font-size: 18px;
+  }
+  
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    transition: all 0.3s ease;
+  }
+  
+  .arrow:hover {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .left-arrow {
+    left: 20px;
+  }
+  
+  .right-arrow {
+    right: 20px;
+  }
+  
+  .pagination-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 8px;
+  }
+  
+  .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ddd;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .dot.active {
+    background-color: #4CAF50;
+    transform: scale(1.2);
+  }
+  
+  /* FAQ Section */
+.faq {
+    position: relative;
+    left: 180px;
+    width: 1159px;
+    background-color: #fff;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-family: Arial, sans-serif; /* Setting a default font-family */
+}
+
+.faq-content {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.faq-content h2 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 24px; /* Adjust font size */
+}
+
+.faq-content p {
+    color: #666;
+    margin-bottom: 20px;
+    font-size: 16px; /* Adjust font size */
+    line-height: 1.4; /* Improve readability */
+}
+
+.get-in-touch-button {
+    background-color: #fdd835;
+    color: #000;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.get-in-touch-button:hover {
+    background-color: #fbc02d;
+}
+
+.faq-accordions {
+    flex: 1.5;
+}
+
+.faq-item {
+    border-bottom: 1px solid #eee;
+    margin-bottom: 15px;
+}
+
+.faq-question {
+    font-size: 18px;
+    color: #333;
+    padding: 15px 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-icon {
+    font-size: 20px;
+    color: #666;
+    transition: transform 0.3s ease;
+    /* Add these lines to ensure visibility */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.faq-item.active .faq-icon {
+    transform: rotate(45deg);
+}
+
+.faq-answer {
+    color: #555;
+    padding: 0 0 15px 0;
+    display: none;
+    font-size: 14px; /* Adjust font size */
+    line-height: 1.5; /* Improve readability */
+}
+
+.see-all-faqs {
+    display: inline-block;
+    color: #007bff;
+    margin-top: 20px;
+    text-decoration: none;
+    font-size: 16px; /* Adjust font size */
+}
+.home11 {
+    /* You might want to add some padding or margin here */
+    padding: 20px;
+    width: 1200px;
+    position: relative;
+    left: 160px;
+}
+
+.subs-section {
+    background-image: url('images/subscription.jpg'); /* Path to your image */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 80px 20px; /* Adjust padding to your needs */
+    border-radius: 10px; /* Optional: for rounded corners */
+    width: 100%;
+    height: 442px;
+}
+
+.subs-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.subs-section p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px; /* Adjust maximum width */
+    margin: 0 auto;
+}
+
+.input-container input[type="email"] {
+    padding: 12px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    width: 70%; /* Adjust width as needed */
+    font-size: 1em;
+    color: #333;
+}
+
+.input-container .subscribe-button {
+    background-color: #fdd835;
+    color: #000;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.input-container .subscribe-button:hover {
+    background-color: #fbc02d;
+}
+.footer {
+    background-color: #292929;
+    color: #eee;
+    padding: 30px 0;
+    font-family:'newRailLight';
+
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-logo {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.footer-columns {
+    display: flex;
+}
+
+.footer-column {
+    margin-right: 50px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #eee;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.footer-social {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-social li {
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.footer-social a {
+    color: #eee;
+    text-decoration: none;
+    font-size: 0.9em;
+    display: flex;
+    align-items: center;
+}
+
+.footer-social i {
+    margin-right: 5px;
+    font-size: 1.1em;
+}
+
+.footer-copyright {
+    font-size: 0.7em;
+    margin-top: 30px;
+    color: #aaa;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.footer-newsletter {
+    text-align: left;
+}
+
+.footer-newsletter h4 {
+    margin-bottom: 10px;
+    font-size: 1em;
+    color: #ddd;
+}
+
+.newsletter-form {
+    display: flex;
+    align-items: center;
+}
+
+.newsletter-form input[type="email"] {
+    padding: 8px;
+    border: 1px solid #666;
+    border-radius: 5px 0 0 5px;
+    background-color: #444;
+    color: #eee;
+    width: 200px;
+}
+
+.newsletter-form button {
+    padding: 8px 12px;
+    background-color: #ddd;
+    color: #333;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.footer-privacy {
+    font-size: 0.6em;
+    color: #aaa;
+    margin-top: 10px;
+}
+
+.footer-privacy a {
+    color: #eee;
+}

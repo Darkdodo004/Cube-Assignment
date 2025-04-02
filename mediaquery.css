@@ -1,0 +1,283 @@
+/* ==================== MEDIA QUERIES ==================== */
+
+/* Tablet View (768px - 1024px) */
+@media (max-width: 1024px) {
+    /* General adjustments */
+    body {
+        overflow-x: hidden;
+    }
+    
+    /* Header remains the same */
+    
+    /* Navigation - convert to hamburger */
+    .nav-container {
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+    
+    .nav-links {
+        position: fixed;
+        top: 30px; /* below header */
+        left: -100%;
+        width: 80%;
+        height: calc(100vh - 30px);
+        background-color: #F3F3F3;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 30px;
+        transition: 0.5s;
+        z-index: 1000;
+    }
+    
+    .nav-links.active {
+        left: 0;
+    }
+    
+    .nav-links li {
+        margin: 15px 0;
+        padding: 0;
+    }
+    
+    .search-btn, .try-btn {
+        position: static;
+        margin-left: auto;
+    }
+    
+    .logo {
+        position: static;
+        margin-right: auto;
+    }
+    
+    /* Hamburger menu */
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        width: 30px;
+        height: 25px;
+        position: relative;
+        z-index: 1001;
+        margin-left: 20px;
+    }
+    
+    .hamburger span {
+        display: block;
+        height: 3px;
+        width: 100%;
+        background: #000;
+        margin-bottom: 5px;
+        transition: 0.3s;
+    }
+    
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+    }
+    
+    /* Home section adjustments */
+    .home {
+        flex-direction: column;
+        padding: 20px;
+    }
+    
+    .home-container1 {
+        width: 100%;
+        left: 0;
+        padding: 0 20px;
+    }
+    
+    .home-container2 {
+        position: static;
+        width: 100%;
+        margin-top: 30px;
+    }
+    
+    .home-container1b {
+        flex-wrap: wrap;
+    }
+    
+    .shopnow {
+        position: static;
+        margin-top: 20px;
+    }
+    
+    .inc {
+        position: static;
+        margin-top: 30px;
+    }
+    
+    .incre {
+        width: 100%;
+        padding: 12px 20px;
+        text-align: center;
+    }
+    
+    /* Home2 section */
+    .home2 {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+    
+    .left-section, .right-section {
+        width: 100%;
+        margin: 0;
+        position: static;
+    }
+    
+    .thumbnail-container {
+        justify-content: center;
+        margin: 20px 0;
+    }
+    
+    /* Adjust thumbnail positions */
+    #thumbnail2, #thumbnail3, #thumbnail4, 
+    #thumbnail5, #thumbnail6, #thumbnail7,
+    #thumbnail8, #thumbnail9, #thumbnail10 {
+        position: static;
+        margin: 10px;
+    }
+    
+    /* Other sections */
+    .guaruntee, .companies, .veg {
+        margin: 20px 0;
+    }
+    
+    .guaruntee img, .companies img, .veg img {
+        width: 100%;
+    }
+    
+    .home3 {
+        padding: 20px;
+    }
+    
+    .image-container {
+        flex-direction: column;
+    }
+    
+    .product-image {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    
+    .home4 {
+        width: 100%;
+        padding: 20px;
+    }
+    
+    .product-section {
+        flex-direction: column;
+        right: 0;
+    }
+    
+    .benefits-home4 {
+        grid-template-columns: 1fr;
+        left: 0;
+        margin-top: 20px;
+    }
+    
+    .button {
+        left: 0;
+        text-align: center;
+        margin: 20px 0;
+    }
+    
+    .home5 img {
+        width: 100%;
+    }
+    
+    .home6 {
+        flex-direction: column;
+        left: 0;
+        padding: 20px;
+    }
+    
+    .video-section {
+        margin-top: 30px;
+    }
+    
+    .home7 {
+        width: 100%;
+        padding: 30px 20px;
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .stat {
+        margin: 15px 0;
+        text-align: center;
+    }
+    
+    .home8, .home9, .faq, .home11 {
+        width: 100%;
+        left: 0;
+        padding: 20px;
+    }
+    
+    .comparison-table {
+        font-size: 14px;
+    }
+    
+    .comparison-table th, 
+    .comparison-table td {
+        padding: 8px 5px;
+    }
+    
+    .footer-container {
+        flex-direction: column;
+    }
+    
+    .footer-columns {
+        flex-direction: column;
+    }
+    
+    .footer-column {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    
+    .footer-right {
+        margin-top: 30px;
+    }
+}
+
+/* Mobile View (up to 767px) */
+@media only screen and (max-width: 360px) and (max-height: 767px) {
+    body {
+        font-size: 14px; /* Adjust base font size */
+    }
+
+    header .logo img {
+        width: 80px; /* Further adjust logo size */
+    }
+
+    header .search-btn button {
+        font-size: 12px; /* Adjust button font size */
+        padding: 6px 10px;
+    }
+
+    .main-content h1 {
+        font-size: 24px; /* Adjust heading size */
+    }
+
+    .main-content .stats div .stat-number {
+        font-size: 28px; /* Adjust stat number size */
+    }
+
+    .main-content .description {
+        font-size: 15px; /* Adjust description size */
+    }
+
+    .main-content .shopnow-btn {
+        font-size: 15px; /* Adjust button size */
+        padding: 10px 20px;
+    }
+  
+}
